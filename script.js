@@ -433,11 +433,11 @@ let mobileMenu = document.querySelector('.mobileMenu');
 mobileMenu.addEventListener('click', () => {
     if (!mobileMenuActive) {
         mobileMenuActive = true;
-        logo.classList.add('mobileNavActive');
+        logo.classList.add("activeMobileNav");
         document.querySelector('nav ul').style.transform = 'translateX(0)';
     } else {
         mobileMenuActive = false;
-        logo.classList.remove('mobileNavActive');
+        logo.classList.remove("activeMobileNav");
         document.querySelector('nav ul').style.transform = 'translateX(-800px)';
     }
 });
