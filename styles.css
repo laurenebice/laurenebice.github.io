@@ -1148,12 +1148,14 @@ h2 {
         color: var(--green);
         cursor: pointer;
     }
+    nav {
+        float: left;
+    }
 
     nav ul {
         transform: translateX(-900px);
         transition-property: all;
         transition-duration: .75s;
-        float: left;
     }
     
     .navLink {
