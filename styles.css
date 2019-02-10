@@ -252,42 +252,9 @@ p {
 }
 #experiment {
     left: 17%;
-}
-#create {
-    left: 27%;
-    transform: translateX(800px);
-    background: var(--purple);
-}
-
-#learnIcon:hover{
-    animation-name: throwHat;
-    animation-duration: .75s;
-    animation-iteration-count: 1;
-}
-
-@keyframes throwHat {
-    10% {
-        transform: translateY(-270px) rotate(60deg);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-
-#experiment {
     transform: translateY(800px);
     background: var(--main-bg-color);
 }
-
-.feature-box p {
-    position: absolute;
-    width: 75%;
-    text-align: center;
-    top: 250px;
-    left: 40px;
-}
-
 #experimentIcon:hover {
     animation-name: shake;
     animation-duration: .75s;
@@ -311,7 +278,35 @@ p {
         transform: rotate(0deg);
     }
 }
+#create {
+    left: 27%;
+    transform: translateX(800px);
+    background: var(--purple);
+}
 
+#learnIcon:hover{
+    animation-name: throwHat;
+    animation-duration: .75s;
+    animation-iteration-count: 1;
+}
+
+@keyframes throwHat {
+    10% {
+        transform: translateY(-270px) rotate(60deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.feature-box p {
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    top: 250px;
+    left: 40px;
+}
 
 #createIcon:hover {
     animation-name: draw;
@@ -1198,6 +1193,14 @@ h2 {
     }
     #learn {
         margin-left: 1%;
+    }
+    #create {
+        transform: translateX(0);
+        transform: translateY(900px);
+    }
+    #experiment{
+        transform: translateY(0);
+        transform: translateX(900px);
     }
     .projectButtons {
         width: 100%;
