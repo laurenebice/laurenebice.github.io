@@ -1151,6 +1151,7 @@ h2 {
     }
     nav {
         margin-right: 2%;
+        margin-left: 0;
     }
 
     nav ul {
