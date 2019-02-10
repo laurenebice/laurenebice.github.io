@@ -1149,7 +1149,7 @@ h2 {
         cursor: pointer;
     }
     nav {
-        float: left;
+        left: 0;
     }
 
     nav ul {
