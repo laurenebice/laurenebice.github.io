@@ -434,10 +434,12 @@ mobileMenu.addEventListener('click', () => {
     if (!mobileMenuActive) {
         mobileMenuActive = true;
         logo.style.opacity = '0';
+        logo.style.display = 'none';
         document.querySelector('nav ul').style.transform = 'translateX(0)';
     } else {
         mobileMenuActive = false;
         logo.style.opacity = '1';
+        logo.style.display = 'block';
         document.querySelector('nav ul').style.transform = 'translateX(-800px)';
     }
 });
