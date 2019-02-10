@@ -1142,6 +1142,7 @@ h2 {
         transition-duration: .75s;
         float: right;
         padding: 3%;
+        margin-left: 10px;
     }
 
     .mobileMenu:hover {
@@ -1154,7 +1155,6 @@ h2 {
         transform: translateX(-900px);
         transition-property: all;
         transition-duration: .75s;
-        margin-right: 2%;
     }
     
     .navLink {
