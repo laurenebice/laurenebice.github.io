@@ -1142,7 +1142,7 @@ h2 {
         transition-duration: .75s;
         float: right;
         padding-right: 3%;
-        padding-left: 5%;
+        padding-left: 3%;
     }
 
     .mobileMenu:hover {
