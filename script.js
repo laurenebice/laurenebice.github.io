@@ -433,13 +433,11 @@ let mobileMenu = document.querySelector('.mobileMenu');
 mobileMenu.addEventListener('click', () => {
     if (!mobileMenuActive) {
         mobileMenuActive = true;
-        logo.style.opacity = '0';
-        logo.style.display = 'none';
+        logo.classList.add('mobileNavActive');
         document.querySelector('nav ul').style.transform = 'translateX(0)';
     } else {
         mobileMenuActive = false;
-        logo.style.opacity = '1';
-        logo.style.display = 'block';
+        logo.classList.remove('mobileNavActive');
         document.querySelector('nav ul').style.transform = 'translateX(-800px)';
     }
 });

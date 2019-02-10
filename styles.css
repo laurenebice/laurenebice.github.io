@@ -1165,16 +1165,12 @@ h2 {
     .logo {
         width: 15%;
         z-index: 100;
-        transition-property: all;
-        transition-duration: .75s;
+        opacity: 1;
+        display: block;
     }
-    @keyframes fadeInOut{
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+    .logo .activeMobileNav {
+        opacity: 0;
+        display: none;
     }
     .home {
         background-position-x: right;
