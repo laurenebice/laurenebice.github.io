@@ -1148,9 +1148,6 @@ h2 {
         color: var(--green);
         cursor: pointer;
     }
-    nav {
-        margin-right: 2%;
-    }
 
     nav ul {
         transform: translateX(-900px);
