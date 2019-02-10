@@ -1141,7 +1141,7 @@ h2 {
         transition-property: all;
         transition-duration: .75s;
         float: right;
-        padding: 3%;
+        padding-right: 3%;
         padding-left: 5%;
     }
 
