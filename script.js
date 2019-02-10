@@ -117,7 +117,7 @@ window.addEventListener("scroll", debounce(activeNav));
 //content for work section
 const webDevelopment = {
     section: "webDevelopment",
-    image: ["images/webDevelopment/billTracker.jpg", "images/webDevelopment/christmasCountdown.jpg", "images/webDevelopment/salesTax.jpg"],
+    image: ["images/webDevelopment/billTracker.JPG", "images/webDevelopment/christmasCountdown.JPG", "images/webDevelopment/salesTax.JPG"],
     name: ["Bill Tracker", "Christmas Countdown", "Sales Tax Calculator"],
     description: ["Work in progress. Takes in a name for the bill, the amount, and due date. More functionality to be added in the future. | JavaScript, HTML, CSS", "Counts down the days until christmas. | JavaScript, HTML, CSS", "Calulates the sales tax of your purchase. If you\'re on a budget and only have so much to spend, it will give you a more realistic idea of how much to spend. | JavaScript, HTML, CSS"],
     link: ["https://codepen.io/Laurenebice/full/JemzdG", "https://codepen.io/Laurenebice/full/JeNKMB", "https://codepen.io/Laurenebice/full/qQxLBb"]
