@@ -1168,7 +1168,7 @@ h2 {
         opacity: 1;
         display: block;
     }
-    .logo .activeMobileNav {
+    .activeMobileNav {
         opacity: 0;
         display: none;
     }
