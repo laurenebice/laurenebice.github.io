@@ -1149,14 +1149,12 @@ h2 {
         cursor: pointer;
     }
 
-    nav {
-        margin-right: 2%;
-    }
 
     nav ul {
         transform: translateX(-900px);
         transition-property: all;
         transition-duration: .75s;
+        margin-right: 2%;
     }
     
     .navLink {
