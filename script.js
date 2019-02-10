@@ -117,7 +117,7 @@ window.addEventListener("scroll", debounce(activeNav));
 //content for work section
 const webDevelopment = {
     section: "webDevelopment",
-    image: ["images/webDevelopment/billTracker.JPG", "images/webDevelopment/christmasCountdown.JPG", "images/webDevelopment/salesTax.JPG"],
+    image: ["images/webDevelopment/billTracker.png", "images/webDevelopment/christmasCountdown.png", "images/webDevelopment/salesTax.png"],
     name: ["Bill Tracker", "Christmas Countdown", "Sales Tax Calculator"],
     description: ["Work in progress. Takes in a name for the bill, the amount, and due date. More functionality to be added in the future. | JavaScript, HTML, CSS", "Counts down the days until christmas. | JavaScript, HTML, CSS", "Calulates the sales tax of your purchase. If you\'re on a budget and only have so much to spend, it will give you a more realistic idea of how much to spend. | JavaScript, HTML, CSS"],
     link: ["https://codepen.io/Laurenebice/full/JemzdG", "https://codepen.io/Laurenebice/full/JeNKMB", "https://codepen.io/Laurenebice/full/qQxLBb"]
@@ -133,7 +133,7 @@ const webDesign = {
 
 const branding = {
     section: "branding",
-    image: ["images/branding/allenRosalesBranding.png", "images/branding/busyBeesBranding.png", "images/branding/dunRiteBranding.png", "images/branding/personalBranding.png"],
+    image: ["images/branding/allenRosalesBranding.png", "images/branding/busyBeesBranding.png", "images/branding/dunriteBranding.png", "images/branding/personalBranding.png"],
     name: ["Allen Rosales Law Firm", "Busy Bees Bakery", "DunRite Remodeling & Roofing", "Personal Brand"],
     description: ["Branding for the Allen Rosales Law Firm. Logo, business card, website banner, and photo.", "Branding for a fictional company I\'ve create, Busy Bees Bakery.Logo, location examples, and product examples.", "Branding for Dunrite Roofing & Remodeling.Logo Design and photo ad, created using Photoshop.", "Personal branding.Personal brand merchandise"]
 }
