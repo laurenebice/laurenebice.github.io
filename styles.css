@@ -1157,6 +1157,7 @@ h2 {
         transition-duration: .75s;
         float: left;
         padding-right: 5%;
+        padding-left: 1%;
     }
     
     .navLink {
