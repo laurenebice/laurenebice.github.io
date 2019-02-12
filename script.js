@@ -262,8 +262,8 @@ function expandProject(section, index) {
 
     let fullsizeImage = document.querySelector('.full-size');
     if (fullsizeImage.width < fullsizeImage.height) {
-        fullsizeImage.style.width = 'auto';
-        fullsizeImage.style.height = '90%';
+        fullsizeImage.style.Width = 'auto';
+        fullsizeImage.style.maxHeight = '90%';
         fullsizeImage.style.top = '60%';
     }
 
@@ -339,10 +339,8 @@ function expandProject(section, index) {
     changeImage = function(direction) {
             if (direction === 'next' && currentIndex + 1 < projectObject.image.length) {
                 currentIndex = currentIndex + 1;
-                console.log('next', currentIndex);
             } else if (direction === 'previous' && currentIndex -1 >= 0) {
                 currentIndex = currentIndex - 1;
-                console.log('previous', currentIndex);
             }
             imageContainer.innerHTML = `<img src = "${projectObject.image[currentIndex]}" class = "full-size" alt = "${projectObject.name[currentIndex]}">`;
             if (projectObject.hasOwnProperty("description")) {
@@ -373,13 +371,11 @@ function expandProject(section, index) {
 }
 document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowRight') {
-        console.log('keydown');
         changeImage('next');
     }
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowLeft') {
-        console.log('keydown');
         changeImage('previous');
     }
 })
