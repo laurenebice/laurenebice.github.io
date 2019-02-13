@@ -124,12 +124,15 @@ const webDevelopment = {
 }
 
 const webDesign = {
-    section: "webDesign",
-    image: ["images/webDesign/busyBees.png"],
-    name: ["Busy Bees Bakery"],
-    description: ["Six page web design mockup for my fictional Busy Bee\"s Bakery. Download below to view on Adobe XD | Adobe XD"],
-    link: ["mockup-site.xd"]
-}
+  section: "webDesign",
+  image: ["images/webDesign/busyBees.png", "images/webDesign/dunrite.png"],
+  name: ["Busy Bees Bakery", "DunRite Remodeling & Roofing"],
+  description: [
+    'Six page web design mockup for my fictional Busy Bee"s Bakery. Download below to view on Adobe XD | Adobe XD',
+    "Mockup for the future website of DunRite Remodeling & Roofing. The website will be developed as a custom WordPress template. Download below to view on Adobe XD | Adobe XD"
+  ],
+  link: ["mockup-BusyBees.xd","mockup-DunRite.xd"]
+};
 
 const branding = {
     section: "branding",
