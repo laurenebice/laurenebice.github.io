@@ -125,7 +125,7 @@ const webDevelopment = {
 
 const webDesign = {
   section: "webDesign",
-  image: ["images/webDesign/busyBees.png", "images/webDesign/dunrite.png"],
+  image: ["images/webDesign/busyBees.png", "/images/webDesign/dunrite.png"],
   name: ["Busy Bees Bakery", "DunRite Remodeling & Roofing"],
   description: [
     'Six page web design mockup for my fictional Busy Bee"s Bakery. Download below to view on Adobe XD | Adobe XD',
