@@ -4,11 +4,28 @@ scroll-behavior: smooth;
  --purple: rgb(143, 54, 90);
  --green: rgb(174, 188, 73);  
 }
+
 html{
     position: absolute;
     width: 100vw;
     max-width: 100%;
 }
+
+::-webkit-scrollbar{
+    background: var(--green);    
+} 
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(143, 54, 90, 1); 
+  border-radius: 8px;
+  transition-property: all;
+  transition-duration: .75s;
+  box-shadow: 0px 2px 2px rgb(70, 26, 43);
+}
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0px 0px 2px rgb(70, 26, 43);
+}
+
 body{
 position: absolute;
 background-color: var(--main-bg-color);
@@ -84,10 +101,7 @@ nav a li {
     text-decoration-style: none;
     font-weight: normal;
     padding: 20px;
-    text-shadow: 0px 0px 0px var(--green);
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: ease-in-out;
+    
 }
 
 nav a li::before {
@@ -97,6 +111,9 @@ nav a li::before {
 nav a li:hover {
     text-shadow: 1.5px 1.5px 1.5px rgb(70, 26, 43);
     font-weight: bolder;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .active {
     font-weight: bolder;
@@ -358,13 +375,13 @@ p {
 }
 
 .project {
-    position: relative;
+    position: absolute;
+    top: 30%;
     display: block;
     width: 90%;
     height: 60%;
     overflow-y: scroll;
     padding-left: 5%;
-    padding-bottom: 5%;
 }
 
 .project::-webkit-scrollbar{
@@ -438,13 +455,15 @@ p {
     padding-top: 12px;
     padding-bottom: 12px;
     transition-property: all;
-    transition-duration: .25s;
-    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .projectButton:hover {
     border: 2px solid white;
+    background: var(--green);
     box-shadow: 1px 1px 4px rgb(70, 26, 43);
+    color: white;
     cursor: pointer;
     font-weight: bolder;
 }
@@ -467,11 +486,11 @@ p {
 }
 
 .screen-overlay{
-    position: relative;
+    position: absolute;
     margin: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     z-index: 96;
     top: inherit;
 }
@@ -510,7 +529,7 @@ p {
     position: relative;
     bottom: 15%;
     width: 40%;
-    height: auto;
+    height: 15%;
     background: rgba(143, 54, 90, 0.7);
     border-radius: 8px;
     box-shadow: 3px 3px 3px rgb(70, 26, 43);
@@ -519,18 +538,34 @@ p {
     padding: 20px;
     text-align: center;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
     transition-timing-function: ease;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-name: slide-left;
+    animation-duration: 1.25s;
     animation-iteration-count: 1;
 }
+.description h3,p,.view {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: .75s;
+    animation-fill-mode: forwards;
+}
 
-@keyframes fadeIn{
+@keyframes slide-left {
     0%{
-        opacity: 0;
+        left: 30%;
     }
     100%{
+        left: 0%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -547,16 +582,16 @@ p {
     box-shadow: 2px 2px 3px rgb(70, 26, 43);
     z-index: 101;
     font-size: 1em;
-    transition-property: all;
-    transition-duration: .75s;
+    transition-property: box-shadow, color, background, transform;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
     font-family: 'Raleway', sans-serif;
 }
 .minimize::after{
     position: relative;
-    content: '-';
+    content: '>';
     padding: 2px;
-    top: 20%;
+    top: 12%;
 }
 
 .minimize:hover{
@@ -579,18 +614,21 @@ p {
     animation-duration: .75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-direction: forwards;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1.25s;
     transition-timing-function: ease;
 }
 .minimized .minimize {
-    top: 17%;
+    top: 12%;
     margin: auto;
     left: 25%;;
+    transform: rotate(180deg);
+    box-shadow: -2px -2px 3px rgb(70, 26, 43);
 }
 
 .minimized .minimize::after{
-    content: '<';
+    content: '>';
 }
 
 @keyframes slide-right {
@@ -713,7 +751,7 @@ p {
 }
 
 .scrollContent::-webkit-scrollbar{
-    background: rgba(70, 26, 43, 0.5);
+    background: transparent;
     height: 60%;
     width: 10px;
     
@@ -724,6 +762,7 @@ p {
 }
 
 .scrollContent::-webkit-scrollbar-thumb {
+  border-radius: 8px;
   background: rgba(174,188,73,0.6);
 }
 
@@ -740,7 +779,7 @@ p {
     margin-right: 5%;
     margin-left: 5%;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: .75s;
     transition-timing-function: ease-in-out;
 }
 
@@ -772,8 +811,8 @@ p {
     text-align: center;
     box-shadow: 3px 3px 4px rgb(70, 26, 43);
     transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out; 
+    transition-duration: .75s;
+    transition-timing-function: ease-in-out;
 }
 
 .aboutButton a:visited {
@@ -782,7 +821,9 @@ p {
 
 .aboutButton:hover {
     border: 2px solid white !important;
-    font-weight: bolder !important;
+    background: var(--purple);
+    color: white !important;
+    font-weight: bolder;
     box-shadow: 1px 1px 2px rgb(70, 26, 43); 
     cursor: pointer;
 }

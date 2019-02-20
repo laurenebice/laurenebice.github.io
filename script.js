@@ -113,6 +113,7 @@ function checkSlide(e) {
 //functions to run on scroll
 window.addEventListener("scroll", debounce(checkSlide));
 window.addEventListener("scroll", debounce(activeNav));
+window.addEventListener('load', activeNav);
 
 //content for work section
 const webDevelopment = {
@@ -144,8 +145,8 @@ const branding = {
 const adobe = {
     section: "adobe",
     image: ["images/adobe/fawkes.jpg", "images/adobe/auroraBearialus.jpg", "images/adobe/doubleExposure.jpg", "images/adobe/doubleExposure-2.jpg", "images/adobe/doubleExposure-3.jpg", "images/adobe/doubleExposure-4.jpg", "images/adobe/flying.jpg", "images/adobe/geometricDoberman-01.jpg", "images/adobe/geometricDoberman-black.jpg", "images/adobe/ladyIvy.jpg", "images/adobe/monkOverlay.jpg", "images/adobe/mossChameleon.jpg", "images/adobe/motherNature.jpg", "images/adobe/rainbowChameleon.jpg", "images/adobe/rickAndMortyShirt.jpg", "images/adobe/succulentTortoise.jpg", "images/adobe/doubleExposureTree.jpg", "images/adobe/sunGoddess.jpg", "images/adobe/chatra.jpg", "images/adobe/wave.jpg", "images/adobe/wellBehaved.jpg"],
-    name: ["Fawkes", "Aurora Bearialus", "Double Exposure", "Double Exposure", "Double Exposure", "Double Exposure", "Flying", "Geometric Doberman", "Geometric Doberman Frame", "Lady Ivy", "Meditation", "Camoflauge", "Mother Nature", "Rainbow Chameleon", "Design Competition Entry", "Succulent Tortoise", "Sun", "Double Exposure", "Chatra", "Wave", "Photo Quote"],
-    description: ["Guy Fawkes mask made entirely of V\"s | Photoshop", "Polar Bears overlayed with an aurora borealis | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Created entirely with the pen tool | Illustrator", "Created entirely with the pen tool | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Entry for Rick and Morty T - Shirt design contest | Illustrator", "Photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Text and photo manipulation"]
+    name: ["Fawkes", "Aurora Bearialus", "Double Exposure", "Double Exposure", "Double Exposure", "Double Exposure", "Flying", "Geometric Doberman", "Geometric Doberman Frame", "Lady Ivy", "Meditation", "Camoflauge", "Mother Nature", "Rainbow Chameleon", "Design Competition Entry", "Succulent Tortoise", "Double Exposure",  "Sun", "Chatra", "Wave", "Photo Quote"],
+    description: ["Guy Fawkes mask made entirely of V\"s | Photoshop", "Polar Bears overlayed with an aurora borealis | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Created entirely with the pen tool | Illustrator", "Created entirely with the pen tool | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Entry for Rick and Morty T - Shirt design contest | Illustrator", "Photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Double exposure photo manipulation | Photoshop", "Text and photo manipulation"]
 }
 
 const photography = {
@@ -228,7 +229,6 @@ function removeListener(){
 function exitProject() {
     fullProjectView.innerHTML = "";
     fullProjectView.style.display = "none";
-    projects.style.display = "block";
 }
 
 let projectObject;
@@ -252,7 +252,6 @@ function expandProject(section, index) {
     minimizeActive = false;
 
     fullProjectView.style.display = "block";
-    projects.style.display = "none";
 
     let overlay = document.createElement("div");
     overlay.setAttribute("class", "screen-overlay");
