@@ -326,6 +326,7 @@ function expandProject(section, index) {
             if(projectObject.hasOwnProperty("link")){
             projectLink.style.display = "none";
             viewButton.style.display = "none";
+            document.querySelector(".description h3,p,.view").style.animation
             }
         } else {
             minimizeActive = false;
