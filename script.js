@@ -120,7 +120,7 @@ const webDevelopment = {
     section: "webDevelopment",
     image: ["images/webDevelopment/billTracker.png", "images/webDevelopment/christmasCountdown.png", "images/webDevelopment/salesTax.png"],
     name: ["Bill Tracker", "Christmas Countdown", "Sales Tax Calculator"],
-    description: ["Work in progress. Takes in a name for the bill, the amount, and due date. More functionality to be added in the future. | JavaScript, HTML, CSS", "Counts down the days until christmas. | JavaScript, HTML, CSS", "Calulates the sales tax of your purchase. If you\'re on a budget and only have so much to spend, it will give you a more realistic idea of how much to spend. | JavaScript, HTML, CSS"],
+    description: ["Work in progress. Takes in a name for the bill, the amount, and due date. Bills are automatically sorted by most recent due date, and the amount and due date are editable. | JavaScript, HTML, CSS", "Counts down the days until christmas. | JavaScript, HTML, CSS", "Calulates the sales tax of your purchase. If you\'re on a budget and only have so much to spend, it will give you a more realistic idea of how much to spend. | JavaScript, HTML, CSS"],
     link: ["https://codepen.io/Laurenebice/full/JemzdG", "https://codepen.io/Laurenebice/full/JeNKMB", "https://codepen.io/Laurenebice/full/qQxLBb"]
 }
 
